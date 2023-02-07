@@ -1,16 +1,19 @@
 import React from 'react';
+import {Routes ,Route, } from "react-router-dom";
 import './App.css';
 
-import Home from './components/Home';
-//import Portfolio from './components/Portfolio';
+import Home from './components/view/Home';
+import Portfolio from './components/view/Portfolio';
 
 function App() {
   return (
-    <header className="App-header">
-      <div>
-        <Home />
-      </div>
-    </header>
+    <div>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Portfolio" element={<Portfolio />} />
+      </Routes>
+      
+    </div>
   );
 }
 
