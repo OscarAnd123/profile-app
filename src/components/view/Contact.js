@@ -23,7 +23,7 @@ function Contact() {
             </div>
         <div class="intro">
             <p>
-                Maybe nothing here.
+                Hello World.
             </p>
         </div>
     </div>
